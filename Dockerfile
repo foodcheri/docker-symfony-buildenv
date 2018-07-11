@@ -1,5 +1,7 @@
 FROM registry.gitlab.com/foodcheri/docker-nginx-php7:latest
 
+RUN apt-get update && apt-get install mysql-client
+
 # Install composer and nodejs
 RUN php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');" && \
     php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');" && \
