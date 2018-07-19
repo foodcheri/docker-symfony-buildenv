@@ -13,4 +13,4 @@ RUN composer self-update
 
 RUN curl -sL https://deb.nodesource.com/setup_10.x | bash - && apt install -y nodejs
 
-RUN mkdir -p /app-cache && chown -R www-data:www-data /app-cache
+RUN mkdir -p /app-cache/dev /app-cache/prod && chown -R www-data:www-data /app-cache
