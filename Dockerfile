@@ -1,4 +1,4 @@
-FROM registry.gitlab.com/foodcheri/docker-nginx-php7:latest
+FROM 043607157156.dkr.ecr.eu-west-1.amazonaws.com/foodcheri/nginx-php7
 
 RUN apt-get update && apt-get install -y mysql-client vim netcat git
 
