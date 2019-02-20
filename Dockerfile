@@ -1,4 +1,4 @@
-FROM 043607157156.dkr.ecr.eu-west-1.amazonaws.com/foodcheri/nginx-php7
+FROM eu.gcr.io/foodcheri-gae/nginx-php7:latest
 
 RUN apt-get update && apt-get install -y mysql-client vim netcat git
 
