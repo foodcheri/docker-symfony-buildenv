@@ -1,8 +1,8 @@
 steps:
 - name: "gcr.io/cloud-builders/docker"
-  args: ["build", "-t", "eu.gcr.io/foodcheri-gae/symfony-buildenv:latest", "."]
+  args: ["build", "-t", "eu.gcr.io/foodcheri-gae/symfony-buildenv:7.2", "."]
 
 - name: "gcr.io/cloud-builders/docker"
-  args: ["push", "eu.gcr.io/foodcheri-gae/symfony-buildenv:latest"]
+  args: ["push", "eu.gcr.io/foodcheri-gae/symfony-buildenv:7.2"]
 
 timeout: "1600s"
